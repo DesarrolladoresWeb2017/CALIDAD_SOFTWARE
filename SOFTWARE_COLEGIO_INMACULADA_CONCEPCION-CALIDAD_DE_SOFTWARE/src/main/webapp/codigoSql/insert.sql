@@ -1,0 +1,59 @@
+INSERT INTO curso (codCurso, nombre, estado) VALUES('AR', 'ARTE', 0);
+INSERT INTO curso (codCurso, nombre, estado) VALUES('CIE', 'CIENCIAS SOCIALES', 0);
+INSERT INTO curso (codCurso, nombre, estado) VALUES('COM', 'COMUNICACION', 0);
+INSERT INTO curso (codCurso, nombre, estado) VALUES('ECOII', 'Econometria II', 0);
+INSERT INTO curso (codCurso, nombre, estado) VALUES('MAT', 'MATEMATICA', 0);
+INSERT INTO curso (codCurso, nombre, estado) VALUES('PER', 'PERSONAL SOCIAL', 0);
+INSERT INTO curso (codCurso, nombre, estado) VALUES('REL', 'RELIGION', 0);
+
+INSERT INTO grado (grado, estado) VALUES('1 Grado', 0);
+INSERT INTO grado (grado, estado) VALUES('2 Grado', 0);
+INSERT INTO grado (grado, estado) VALUES('3 Grado', 0);
+
+INSERT INTO profesor (usuario, nombre, apellido, direccion, ciudad, edad, telefonoCasa, telefonoMovil, correo, contraseña, estado) VALUES('pro1', 'manrique jaime', 'juan francisco', 'av.Bealunde-segunda etapa', 'lima', 54, 5364578, 998004417, 'juan@hotmail.com', '123', 0);
+INSERT INTO profesor (usuario, nombre, apellido, direccion, ciudad, edad, telefonoCasa, telefonoMovil, correo, contraseña, estado) VALUES('pro2', 'zapata mello', 'manuel raul', 'av.Bealunde-tercera etapa', 'lima', 40, 5664571, 91554487, 'manuel_123@hotmail.com', '1234', 0);
+INSERT INTO profesor (usuario, nombre, apellido, direccion, ciudad, edad, telefonoCasa, telefonoMovil, correo, contraseña, estado) VALUES('pro3', 'Melania Jaime', 'Mariana Edith', 'av. Lista Mz A lote 7 San Francisco', 'Lima', 23, 4515421, 984513, 'Men@hotmail.com', '123', 0);
+INSERT INTO profesor (usuario, nombre, apellido, direccion, ciudad, edad, telefonoCasa, telefonoMovil, correo, contraseña, estado) VALUES('pro4', 'Marian Quemera', 'Edson Terna', 'Mz "A" lote 7 San Francisco', 'Lima', 34, 45123471, 98451234, 'telma@gmail.com', '123', 0);
+INSERT INTO profesor (usuario, nombre, apellido, direccion, ciudad, edad, telefonoCasa, telefonoMovil, correo, contraseña, estado) VALUES('pro5', 'Coral', 'Ignacio', 'Calle gamarra pasaje 2', 'Lima', 48, 5482017, 965874201, 'Ignacio_coral_8@hotmail.com', 'coral123', 0);
+INSERT INTO profesor (usuario, nombre, apellido, direccion, ciudad, edad, telefonoCasa, telefonoMovil, correo, contraseña, estado) VALUES('pro6', 'Anzualdo', 'Tafur', 'Calle el avismo nro58', 'Lima', 53, 5214871, 965887420, 'tafur548tlv@outlook.es', 'tafuerteama', 0);
+
+INSERT INTO seccion (seccion, estado) VALUES('A', 0);
+INSERT INTO seccion (seccion, estado) VALUES('B', 0);
+INSERT INTO seccion (seccion, estado) VALUES('Z', 0);
+
+INSERT INTO aula (gradog, secciong, usuarioP, cantMax, estado) VALUES('1 Grado', 'A', 'pro1', 25, 0);
+INSERT INTO aula (gradog, secciong, usuarioP, cantMax, estado) VALUES('1 Grado', 'B', 'pro6', 20, 0);
+INSERT INTO aula (gradog, secciong, usuarioP, cantMax, estado) VALUES('2 Grado', 'A', 'pro2', 30, 0);
+INSERT INTO aula (gradog, secciong, usuarioP, cantMax, estado) VALUES('2 Grado', 'B', 'pro3', 30, 0);
+INSERT INTO aula (gradog, secciong, usuarioP, cantMax, estado) VALUES('3 Grado', 'A', 'pro5', 10, 0);
+INSERT INTO aula (gradog, secciong, usuarioP, cantMax, estado) VALUES('3 Grado', 'B', 'pro4', 20, 0);
+INSERT INTO aula (gradog, secciong, usuarioP, cantMax, estado) VALUES('3 Grado', 'Z', 'pro5', 32, 0);
+
+
+INSERT INTO asignacion (cursod, profesord, grad, seccio, estado) VALUES('AR', 'pro1', '1 Grado', 'A', 0);
+INSERT INTO asignacion (cursod, profesord, grad, seccio, estado) VALUES('CIE', 'pro2', '2 Grado', 'A', 0);
+INSERT INTO asignacion (cursod, profesord, grad, seccio, estado) VALUES('CIE', 'pro4', '1 Grado', 'A', 0);
+INSERT INTO asignacion (cursod, profesord, grad, seccio, estado) VALUES('REL', 'pro4', '2 Grado', 'A', 0);
+INSERT INTO asignacion (cursod, profesord, grad, seccio, estado) VALUES('ECOII', 'pro3', '3 Grado', 'A', 0);
+INSERT INTO asignacion (cursod, profesord, grad, seccio, estado) VALUES('AR', 'pro1', '3 Grado', 'A', 0);
+INSERT INTO asignacion (cursod, profesord, grad, seccio, estado) VALUES('AR', 'pro1', '2 Grado', 'B', 0);
+INSERT INTO asignacion (cursod, profesord, grad, seccio, estado) VALUES('ECOII', 'pro5', '2 Grado', 'B', 0);
+
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('bry10vi', 'bryan', 'villanueva gomez', '8575421', 'san bartolo - primera etapa ', '2 Grado', 'A', 'Hombre', 'lima', 'comas', 'ninguna', 10, 'violeta', 'villanueva moran', '7412589', 'san camilo.Av 3', 'casado', 'Mujer', 86542421, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('ca10va', 'carla', 'vasquez huaraz', '85457512', 'san camilo.Av 1', '1 Grado', 'A', 'Mujer', 'lima', 'comas', 'ninguna', 10, 'julio', 'vasquez montero', '75845741', 'av.mexico-segunda etapa', 'casado', 'Hombre', 53667841, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('car10gue', 'carla', 'guerrero cateriano', '75482356', 'san camilo.Av 1', '1 Grado', 'B', 'Mujer', 'lima', 'comas', 'ninguna', 10, 'juana', 'cateriano maringa', '74852145', 'belaunde.jose peset.100', 'soltero', 'Mujer', 5366784, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('cla10ba', 'clara', 'ballona lopez', '74554121', 'san bartolo - primera etapa ', '2 Grado', 'A', 'Mujer', 'lima', 'san felipe', 'ninguna', 10, 'emanuel', 'ballona fernandez', '75663221', 'san borga-156', 'casado', 'Hombre', 997745562, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('lu10go', 'luciana', 'gomez ternes', '78584531', 'san camilo.Av 2', '1 Grado', 'A', 'Mujer', 'lima', 'comas', 'ninguna', 10, 'francisco', 'gomez pereira', '98654532', 'av.mexico-primera etapa', 'viudo', 'Hombre', 5366875, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('lu10lo', 'luis', 'lopez quiz', '785865223', 'san camilo.Av 2', '1 Grado', 'A', 'Hombre', 'lima', 'independencia', 'ninguna', 10, 'mariana', 'maguiñes quiz', '8658782', 'los angeles-159', 'casado', 'Mujer', 353647878, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('lu10lu', 'lucho', 'lucumber cupia', '785421', 'san bartolo - primera etapa ', '2 Grado', 'A', 'Hombre', 'lima', 'san felipe', 'ninguna', 10, 'estefany', 'melendes cupia', '78553212', 'belaunde-segunda etapa 77', 'casado', 'Mujer', 9865321, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('lu10me', 'lucas', 'mendez quispe', '75478596', 'san camilo.Av 1', '1 Grado', 'B', 'Hombre', 'lima', 'los olivos', 'ninguna', 10, 'daniel', 'mendez palomio', '8547923', 'av.arequipa.123', 'casado', 'Hombre', 994001152, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('ma11pu', 'martin', 'puma garcia', '98956545', 'av.tupac amaru-prolongacion.3', '1 Grado', 'A', 'Hombre', 'lima', 'puente piedra', 'ninguna', 11, 'gabriella', 'garcia matos', '96868775', 'av.tupac amaru-prolongacion.3', 'casado', 'Mujer', 98665324, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('ma9ja', 'mario', 'james bustamante', '78542423', 'san bartolo - primera etapa ', '2 Grado', 'A', 'Hombre', 'lima', 'los olivos', 'ninguna', 9, 'tom', 'james salinas', '7854521', 'av.arequipa.12', 'divorciado', 'Hombre', 54578512, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('ma9nu', 'manuel', 'nuñez maldonado', '65234578', 'san camilo.Av 1', '1 Grado', 'B', 'Hombre', 'lima', 'los olivos', 'ninguno', 9, 'julia', 'maldonado lopez', '78585621', 'av.belaunde-primera etapa', 'casado', 'Mujer', 53664875, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('mi10li', 'miguel', 'lizarraga jaime', '76754874', 'belaunde.jose peset.156', '1 Grado', 'B', 'Hombre', 'lima', 'independencia', 'sufre de asma ', 10, 'mario jose', 'lizarraga febres', '7748578', 'belaunde.jose peset.156', 'casado', 'Hombre', 5664578, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('nil10bra', 'nilton', 'bravo dominguez', '7852423', 'san bartolo - primera etapa ', '2 Grado', 'A', 'Hombre', 'lima', 'los olivos', 'ninguna', 10, 'julian', 'bravo de la torre', '78545213', 'san camilo.Av 9', 'casado', 'Hombre', 99866654, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('pa9qui', 'paul', 'quispe lopez', '76485912', 'san camilo.Av 1', '1 Grado', 'B', 'Hombre', 'lima', 'comas', 'ninguna', 9, 'maria', 'lopez maliana', '75481532', 'san camilo.Av 1', 'casado', 'Mujer', 968554412, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('pe9is', 'pedro', 'islachin rodriguez', '75412532', 'san camilo.Av 1', '1 Grado', 'B', 'Hombre', 'lima', 'los olivos', 'ninguna', 9, 'isac', 'islachin nuñez', '4575264', 'av.tupac amaru-prolongacion.12', 'viudo', 'Hombre', 8965235, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('ra11oro', 'raul', 'oropeza melen', '7854231', 'san bartolo - primera etapa ', '2 Grado', 'A', 'Hombre', 'lima', 'los olivos', 'ninguna', 11, 'david', 'oropesa moran', '7542354', 'san bartolo - primera etapa ', 'casado', 'Hombre', 96865232, '123', 0);
+INSERT INTO alumno (usuario, nombreh, apellidoh, dnih, direccionh, gradoa, secciona, sexoh, departamento, distrito, obser, edad, nombrep, apellidop, dnip, direccionp, estadoCi, sexop, telefono, contra, estado) VALUES('to10se', 'tomas', 'segundo perez', '78585412', 'san camilo.Av 2', '1 Grado', 'A', 'Hombre', 'lima', 'puente piedra', 'ninguno', 10, 'julian', 'segundo pacheco', '243545343', 'san camilo.Av 2', 'divorciado', 'Hombre', 975457634, '123', 0);
+
